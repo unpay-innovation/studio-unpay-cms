@@ -1,3 +1,4 @@
+import {announcement} from './announcement'
 import {callout, contentTable, ctaButton} from './blocks'
 import {caseStudy} from './caseStudy'
 import {category} from './category'
@@ -9,4 +10,4 @@ import {section} from './section'
 import {seo} from './seo'
 import {youtube} from './youtube'
 
-export const schemaTypes = [post, helpArticle, category, seo, pressRelease, caseStudy, faq, section, youtube, contentTable, callout, ctaButton]
+export const schemaTypes = [announcement, post, helpArticle, category, seo, pressRelease, caseStudy, faq, section, youtube, contentTable, callout, ctaButton]
