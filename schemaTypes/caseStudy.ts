@@ -82,6 +82,29 @@ export const caseStudy = defineType({
       ],
     }),
     defineField({
+      name: 'heroImage',
+      title: 'Hero image',
+      type: 'image',
+      options: {hotspot: true},
+      description:
+        'Shown full width under the title. Landscape works best (roughly 16:9). Optional — the page reads fine without one.',
+      fields: [
+        defineField({
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative text',
+          description: 'What the picture shows, for screen readers and search.',
+          validation: (rule) => rule.required().max(160),
+        }),
+        defineField({
+          name: 'caption',
+          type: 'string',
+          description: 'Optional line printed under the image (credit, context).',
+          validation: (rule) => rule.max(200),
+        }),
+      ],
+    }),
+    defineField({
       name: 'story',
       type: 'array',
       of: [
@@ -108,6 +131,6 @@ export const caseStudy = defineType({
     seoField,
   ],
   preview: {
-    select: {title: 'company', subtitle: 'industry'},
+    select: {title: 'company', subtitle: 'industry', media: 'heroImage'},
   },
 })
