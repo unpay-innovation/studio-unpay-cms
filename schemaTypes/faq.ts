@@ -4,15 +4,26 @@ import {richBlock} from './blocks'
 
 /** Pages a FAQ can appear on. Values are stable ids used by the website. */
 export const FAQ_PAGES = [
+  {title: 'Homepage', value: 'home'},
   {title: 'Pricing page', value: 'pricing'},
   {title: 'Contact page', value: 'contact'},
+  {title: 'Solution: Fintechs', value: 'solution:fintechs'},
+  {title: 'Solution: Lending', value: 'solution:lending'},
+  {title: 'Solution: Marketplaces', value: 'solution:marketplaces'},
+  {title: 'Solution: E-commerce', value: 'solution:ecommerce'},
+  {title: 'Solution: SaaS', value: 'solution:saas'},
+  {title: 'Solution: Enterprise', value: 'solution:enterprise'},
+  {title: 'Solution: Logistics', value: 'solution:logistics'},
+  {title: 'Solution: Real Estate', value: 'solution:real-estate'},
+  {title: 'Solution: EdTech', value: 'solution:edtech'},
+  {title: 'Solution: Insurance', value: 'solution:insurance'},
   {title: 'Product: Flash Checkout', value: 'product:flash-checkout'},
   {title: 'Product: UPI Collect', value: 'product:upi-collect'},
   {title: 'Product: Payouts', value: 'product:payouts'},
   {title: 'Product: Connected Banking', value: 'product:connected-banking'},
   {title: 'Product: Escrow Banking', value: 'product:escrow-banking'},
   {title: 'Product: Embedded Finance', value: 'product:embedded-finance'},
-  {title: 'Product: Lending OS', value: 'product:lending-os'},
+  {title: 'Product: Lending Stack', value: 'product:lending-stack'},
   {title: 'Product: Loan Origination System', value: 'product:loan-origination-system'},
   {title: 'Product: Loan Management System', value: 'product:loan-management-system'},
   {title: 'Product: Reconciliation OS', value: 'product:reconciliation-os'},
@@ -20,7 +31,7 @@ export const FAQ_PAGES = [
   {title: 'Product: Accounting OS', value: 'product:accounting-os'},
   {title: 'Product: KYC & Verification', value: 'product:kyc-verification'},
   {title: 'Product: DocSig', value: 'product:docsig'},
-  {title: 'Product: HRM & Payroll OS', value: 'product:hrm-payroll-os'},
+  {title: 'Product: HRM & Payroll OS', value: 'product:hrm-payroll'},
 ]
 
 export const faq = defineType({
